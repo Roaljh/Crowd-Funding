@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ffed64;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #25b36b;
+    padding: 15px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    height: 90px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.donate-button, .help-button {
+    background-color: #ff8652;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.currency-dropdown {
+    background-color: #ff8652;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url('/scr/hero-section-medical-image.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    height: 500px;
+    width: 100%;
+    padding-left: 5%;
+}
+
+.hero-content {
+    text-align: center;
+    background-color: rgba(55, 63, 65, 0.5);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.hero-content h1 {
+    color: #47dd92;
+    font-size: 3rem;
+}
+
+.hero-content p {
+    color: white;
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.platform-info {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #25b36b;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.give-every-month {
+    background-color: #33a86c;
+    padding: 50px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 40px 200px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.give-left {
+    flex: 1;
+}
+
+.give-left h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.give-left p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.give-button {
+    background-color: #ff8c00;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.give-right {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.benefit {
+    text-align: center;
+    flex: 0 0 45%;
+    margin-bottom: 20px;
+}
+
+.benefit img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 1.1rem;
+}
+
+.crowdfunding-categories {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.crowdfunding-categories h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 2s ease-in-out;
+    width: (100%);
+}
+
+.carousel-item {
+    flex: 0 0 calc(100% / 6); /* Display 6 items at a time */
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.carousel-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.carousel-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    z-index: 100;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.crowdfunding-help {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* You can change this based on your design */
+}
+
+.crowdfunding-help h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.crowdfunding-help h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #33a86c; /* Green underline */
+    margin: 10px auto 0;
+}
+
+.crowdfunding-help .subtitle {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.statistics-section {
+    background-color: #33a86c; /* Green background */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.statistics-content {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 40px;
+}
+
+.stat-item h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 1.2rem;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+.icon-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.icon-item p {
+    font-size: 1rem;
+}
+
+.fundraiser-carousel-section {
+    
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.carousel-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    flex: (100% / 4);
+    display: flex;
+    transition: transform 2s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 20%;
+    margin: 0 10px;
+}
+
+.card {
+    display: inline-block;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    width: 300px;
+}
+
+.card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.share-buttons {
+    justify-content: center;
+}
+
+.share-buttons button {
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.funds-raised {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.donate-button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+
+.contact-us-button {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the page */
+    right: 20px;  /* Distance from the right of the page */
+    background-color: #ff8652;
+    padding: 15px 25px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact-us-button:hover {
+    background-color: #ff6a34;
+    cursor: pointer;
+}
